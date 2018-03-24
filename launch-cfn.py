@@ -3,7 +3,7 @@ import boto3
 cfn = boto3.client('cloudformation',)
 
 response = cfn.create_stack(
-    StackName='Heptio-QS-Kubernetes-4',
+    StackName='Heptio-QS-Kubernetes',
     TemplateURL='https://s3.amazonaws.com/quickstart-reference/heptio/latest/templates/kubernetes-cluster-with-new-vpc.template',
     Parameters=[
         {
