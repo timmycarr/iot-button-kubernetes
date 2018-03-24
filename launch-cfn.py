@@ -1,9 +1,9 @@
-import boto3
+mport boto3
 
 cfn = boto3.client('cloudformation',)
 
 response = cfn.create_stack(
-    StackName='Heptio-QS-Kubernetes-2',
+    StackName='Heptio-QS-Kubernetes-4',
     TemplateURL='https://s3.amazonaws.com/quickstart-reference/heptio/latest/templates/kubernetes-cluster-with-new-vpc.template',
     Parameters=[
         {
@@ -16,7 +16,7 @@ response = cfn.create_stack(
         },
         {
             "ParameterKey": "KeyName",
-            "ParameterValue": ""
+            "ParameterValue": "your-key-here"
         },
         {
             "ParameterKey": "NetworkingProvider",
@@ -46,6 +46,9 @@ response = cfn.create_stack(
             "ParameterKey": "QSS3KeyPrefix",
             "ParameterValue": "heptio/latest"
         },
+    ],
+    Capabilities=[
+        'CAPABILITY_IAM',
     ],
     OnFailure='ROLLBACK',
     EnableTerminationProtection=False
