@@ -1,3 +1,3 @@
-# Using the AWS IOT Button to Launch the Heptio Kubernetes Quickstart
+# IOT Button - Heptio Quickstart
 
 Currently a work in progress.
