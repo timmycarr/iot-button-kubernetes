@@ -1,9 +1,9 @@
 import boto3
 
-cfn = boto3.client('cloudformation',)
+client = boto3.client('cloudformation', region_name='us-west-2')
 
-response = cfn.create_stack(
-    StackName='Heptio-QS-Kubernetes',
+response = client.create_stack(
+    StackName='Heptio-QS-Kubernetes-IOT',
     TemplateURL='https://s3.amazonaws.com/quickstart-reference/heptio/latest/templates/kubernetes-cluster-with-new-vpc.template',
     Parameters=[
         {
