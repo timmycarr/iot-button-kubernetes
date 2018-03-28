@@ -1,0 +1,17 @@
+Single button push test:
+
+{
+  "serialNumber": "DEVICE SERIAL NUMBER",
+  "batteryVoltage": "1466mV",
+  "clickType": "SINGLE"
+}
+
+
+Double button push test:
+
+{
+  "serialNumber": "DEVICE SERIAL NUMBER",
+  "batteryVoltage": "1466mV",
+  "clickType": "DOUBLE"
+}
+
