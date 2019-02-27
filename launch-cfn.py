@@ -23,7 +23,7 @@ def lambda_handler(event, context):
 def build_stack():
     response = client.create_stack(
         StackName=os.environ['stackName'],
-        TemplateURL='https://s3.amazonaws.com/quickstart-reference/heptio/latest/templates/kubernetes-cluster-with-new-vpc.template',
+        TemplateURL='https://aws-quickstart.s3.amazonaws.com/quickstart-vmware/templates/kubernetes-cluster-with-new-vpc.template',
         Parameters=[
             {
                 "ParameterKey": "AvailabilityZone",
