@@ -43,7 +43,7 @@ def build_stack():
             },   
             {
                 "ParameterKey": "K8sNodeCapacity",
-                "ParameterValue": "2"
+                "ParameterValue": "3"
             },
             {
                 "ParameterKey": "InstanceType",
