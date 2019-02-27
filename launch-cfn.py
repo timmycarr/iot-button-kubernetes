@@ -59,11 +59,11 @@ def build_stack():
             },
             {
                 "ParameterKey": "QSS3BucketName",
-                "ParameterValue": "quickstart-reference"
+                "ParameterValue": "aws-quickstart"
             },
             {
                 "ParameterKey": "QSS3KeyPrefix",
-                "ParameterValue": "heptio/latest"
+                "ParameterValue": "quickstart-vmware/"
             },
         ],
         Capabilities=[
